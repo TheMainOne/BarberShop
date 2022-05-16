@@ -2,7 +2,7 @@
   "name": "test-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TheMainOne.github.io/test-site/",
+  "homepage": "https://TheMainOne.github.io/test-site",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
