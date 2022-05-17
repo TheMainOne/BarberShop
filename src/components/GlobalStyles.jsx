@@ -2,19 +2,21 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 30px;
+  padding-left: 31px;
+  padding-right: 31px;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
-    padding: 0 50px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 `;
 
@@ -23,12 +25,13 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Sans-Serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-size: 16px;
   letter-spacing: 0.03em;
   background-color: #f7f7f7;
-  color: #545454;
+  color: #ffffff;
+  margin: 0;
 }
 h1,
 h2,
