@@ -1,11 +1,21 @@
-import { createGlobalStyle } from 'styled-components';
-import styled from 'styled-components';
+import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding: 0 50px;
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle`
