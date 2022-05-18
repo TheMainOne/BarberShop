@@ -9,7 +9,7 @@ export const Header = styled.header`
   background-position: center;
 
   @media screen and (min-width: 768px) {
-    padding-top: 32px;
+    padding-top: 40px;
   }
 `;
 
@@ -32,6 +32,10 @@ export const NavigationWrapper = styled.div`
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 184px;
+  }
 `;
 
 export const NavigationLargeList = styled.ul`
@@ -49,12 +53,22 @@ export const NavigationLargeListItemLink = styled.a`
   line-height: 1.33px;
   letter-spacing: 0.1em;
   color: #ffffff;
+
+  &:hover,
+  focus {
+    color: #ff6c00;
+  }
 `;
 
 export const NavigationContactsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row-reverse;
+    align-items: inherit;
+  }
 `;
 
 export const NavigationContactsButton = styled.button`
@@ -72,6 +86,11 @@ export const NavigationContactsButton = styled.button`
   color: #fff;
   cursor: pointer;
 
+  @media screen and (min-width: 1024px) {
+    margin-left: 40px;
+    margin-bottom: 0px;
+  }
+
   &:hover,
   :focus {
     background-color: #ff6c00;
@@ -82,12 +101,22 @@ export const NavigationContactsLink = styled.a`
   font-size: 12px;
   line-height: 1.33px;
   letter-spacing: 0.1em;
+
+  &:hover,
+  focus {
+    color: #ff6c00;
+  }
 `;
 
 export const NavigationTitleInformation = styled.div`
   @media screen and (min-width: 768px) {
     width: 350px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 350px;
+    margin-left: 100px;
   }
 `;
 
