@@ -15,6 +15,12 @@ export const AboutSectionStyled = styled.section`
   }
 `;
 
+export const AboutSectionWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const AboutSectionTitle = styled.h2`
   display: flex;
   align-items: center;
@@ -79,5 +85,22 @@ export const AboutSectionButton = styled.button`
   :focus {
     color: #fff;
     background-color: #ff6c00;
+  }
+`;
+
+export const AboutSectionImageList = styled.ul`
+  margin-right: 30px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`;
+
+export const AboutSectionImageItem = styled.li`
+  width: 330px;
+  height: 235px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
   }
 `;

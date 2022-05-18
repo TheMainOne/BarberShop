@@ -18,7 +18,7 @@ export const Footer = () => {
     <FooterSection>
       <Container>
         <FooterTitle>Контакты</FooterTitle>
-        <adress>
+        <div>
           <FooterContactsList>
             <FooterContactsListItem>
               <FooterContactsListLink
@@ -49,7 +49,7 @@ export const Footer = () => {
               </FooterContactsListLink>
             </FooterContactsListItem>
           </FooterContactsList>
-        </adress>
+        </div>
         <FooterSecondTitle>Время работы</FooterSecondTitle>
         <FooterSecondText>Ежедневно с 9:00 до 22:00</FooterSecondText>
       </Container>

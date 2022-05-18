@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const FeaturesSection = styled.section`
   padding-top: 84px;
   padding-bottom: 84px;
+  background: #e5e5e5;
 
   @media screen and (min-width: 768px) {
     padding-top: 100px;
