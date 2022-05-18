@@ -51,6 +51,7 @@ ol {
 }
 img {
   display: block;
+  width: 100%;
 }
 a {
   text-decoration: none;
