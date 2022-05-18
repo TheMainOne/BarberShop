@@ -21,7 +21,11 @@ export const Footer = () => {
         <adress>
           <FooterContactsList>
             <FooterContactsListItem>
-              <FooterContactsListLink>
+              <FooterContactsListLink
+                href="https://goo.gl/maps/EHh9YuX74odmkXjB8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LocationOnOutlinedIcon />
                 <FooterContactsListText>
                   ул. Васильковая, 7А Киев, 08132
@@ -29,7 +33,7 @@ export const Footer = () => {
               </FooterContactsListLink>
             </FooterContactsListItem>
             <FooterContactsListItem>
-              <FooterContactsListLink>
+              <FooterContactsListLink href="tel:+380441111111">
                 <LocalPhoneSharpIcon />
                 <FooterContactsListText>
                   +38 044 111 11 11
@@ -37,7 +41,7 @@ export const Footer = () => {
               </FooterContactsListLink>
             </FooterContactsListItem>
             <FooterContactsListItem>
-              <FooterContactsListLink>
+              <FooterContactsListLink href="mailto:barbershop@email.com">
                 <EmailOutlinedIcon />
                 <FooterContactsListText>
                   barbershop@email.com
