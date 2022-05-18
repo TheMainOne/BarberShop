@@ -1,9 +1,13 @@
 import styled from "styled-components";
+import img from "../../images/price/img@2x.png";
 
 export const PriceListSection = styled.section`
   padding-top: 84px;
   padding-bottom: 84px;
   background: #000000;
+  background-image: url(${img});
+  background-size: cover;
+  background-position: center;
 
   @media screen and (min-width: 768px) {
     padding-top: 100px;

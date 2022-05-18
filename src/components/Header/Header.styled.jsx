@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import img from "../../images/hero/img1@2x.jpg";
 
 export const Header = styled.header`
   height: 580px;
   padding-top: 60px;
+  background-image: url(${img});
+  background-size: cover;
+  background-position: center;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;

@@ -9,17 +9,10 @@ import {
   PriceItemText,
   PriceListButton,
 } from "./PriceList.styled";
-import img from "../../images/price/img@2x.png";
 
 export const PriceList = () => {
   return (
-    <PriceListSection
-      style={{
-        backgroundImage: `url(${img})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <PriceListSection>
       <Container>
         <PriceListText>Проведи время в компании лучших мастеров</PriceListText>
         <PriceListTitle>Услуги и цены</PriceListTitle>

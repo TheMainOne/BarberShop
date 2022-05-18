@@ -2,18 +2,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
 import { Container } from "components/GlobalStyles";
 import { Header, Navigation, HeaderTitle, CompanyName } from "./Header.styled";
-import img from "../../images/hero/img1@2x.jpg";
 
 export const SiteHeader = () => {
   return (
     <>
-      <Header
-        style={{
-          backgroundImage: `url(${img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <Header>
         <Container>
           <Navigation>
             <StarBorderRoundedIcon fontSize="large" />
