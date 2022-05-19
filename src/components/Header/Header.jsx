@@ -60,7 +60,7 @@ export const SiteHeader = () => {
           </NavigationWrapper>
           <NavigationTitleInformation>
             <HeaderTitle>A HAIR SALON FOR MEN IN KYIV</HeaderTitle>
-            <CompanyName>Lend-Lease</CompanyName>
+            <CompanyName>barbershop</CompanyName>
             <HeaderText>
               Мы эксперты в модных мужских <br /> стрижках. Работаем быстро,{" "}
               <br />
