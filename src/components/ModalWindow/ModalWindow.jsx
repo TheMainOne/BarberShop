@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
+import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import {
-  ModalButton,
   ModalList,
   ModalListItem,
   ModalPhone,
@@ -44,14 +44,47 @@ export const ModalWindow = ({ open, handleOpen, handleClose }) => {
         />
         <ModalList>
           <ModalListItem>
-            <ModalButton>О нас</ModalButton>
+            <Typography
+              sx={{
+                fontFamily: "inherit",
+                fontSize: "18px",
+                letterSpacing: "0.03em",
+                "&:hover": {
+                  color: "#ff6c00",
+                },
+              }}
+            >
+              О нас
+            </Typography>
           </ModalListItem>
           <ModalListItem>
-            <ModalButton>Товары</ModalButton>
+            <Typography
+              sx={{
+                fontFamily: "inherit",
+                fontSize: "18px",
+                letterSpacing: "0.03em",
+                "&:hover": {
+                  color: "#ff6c00",
+                },
+              }}
+            >
+              Товары
+            </Typography>
           </ModalListItem>
-          <a href="g">
-            <ModalButton>Контакты</ModalButton>
-          </a>
+          <ModalListItem>
+            <Typography
+              sx={{
+                fontFamily: "inherit",
+                fontSize: "18px",
+                letterSpacing: "0.03em",
+                "&:hover": {
+                  color: "#ff6c00",
+                },
+              }}
+            >
+              Контакты
+            </Typography>
+          </ModalListItem>
         </ModalList>
         <ModalPhone href="tel:+380441111111">+38 044 111 11 11</ModalPhone>
         <ModalLinkButton>Онлайн-запись</ModalLinkButton>

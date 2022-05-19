@@ -11,22 +11,6 @@ export const ModalListItem = styled.li`
   }
 `;
 
-export const ModalButton = styled.button`
-  border: none;
-  padding: 0;
-  background: none;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 1.38px;
-  letter-spacing: 0.03em;
-  color: #303030;
-
-  &:hover,
-  :focus {
-    color: #ff6c00;
-  }
-`;
-
 export const ModalPhone = styled.a`
   margin-left: 30px;
   font-size: 18px;
