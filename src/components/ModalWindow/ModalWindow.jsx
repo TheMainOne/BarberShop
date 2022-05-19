@@ -37,7 +37,7 @@ export const ModalWindow = ({ open, handleOpen, handleClose }) => {
             cursor: "pointer",
             color: "#000000",
             marginLeft: "280px",
-            marginTop: "48px",
+            marginTop: "85px",
             marginBottom: "30px",
           }}
           onClick={handleClose}
@@ -49,9 +49,9 @@ export const ModalWindow = ({ open, handleOpen, handleClose }) => {
           <ModalListItem>
             <ModalButton>Товары</ModalButton>
           </ModalListItem>
-          <ModalListItem>
+          <a>
             <ModalButton>Контакты</ModalButton>
-          </ModalListItem>
+          </a>
         </ModalList>
         <ModalPhone href="tel:+380441111111">+38 044 111 11 11</ModalPhone>
         <ModalLinkButton>Онлайн-запись</ModalLinkButton>
