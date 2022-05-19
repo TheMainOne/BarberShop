@@ -73,6 +73,10 @@ export const FeaturesListItem = styled.li`
   &: nth-child(2n) {
     margin-top: 30px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 95px) / 2);
+  }
 `;
 
 export const FeaturesListItemWrapper = styled.span`
