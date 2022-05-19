@@ -7,6 +7,7 @@ import {
   FeaturesList,
   FeaturesListItem,
   FeaturesListItemWrapper,
+  FeaturesListItemText,
 } from "./Features.styled";
 
 export const Features = () => {
@@ -22,19 +23,25 @@ export const Features = () => {
         <FeaturesList>
           <FeaturesListItem>
             <FeaturesListItemWrapper>600</FeaturesListItemWrapper>
-            <p>Довольных клиентов в день</p>
+            <FeaturesListItemText>
+              Довольных клиентов в день
+            </FeaturesListItemText>
           </FeaturesListItem>
           <FeaturesListItem>
             <FeaturesListItemWrapper>50</FeaturesListItemWrapper>
-            <p>Наград за отличный сервис</p>
+            <FeaturesListItemText>
+              Наград за отличный сервис
+            </FeaturesListItemText>
           </FeaturesListItem>
           <FeaturesListItem>
             <FeaturesListItemWrapper>20</FeaturesListItemWrapper>
-            <p>Лучших мастеров Киева</p>
+            <FeaturesListItemText>Лучших мастеров Киева</FeaturesListItemText>
           </FeaturesListItem>
           <FeaturesListItem>
             <FeaturesListItemWrapper>100</FeaturesListItemWrapper>
-            <p>Подарков постоянным клиентам</p>
+            <FeaturesListItemText>
+              Подарков постоянным клиентам
+            </FeaturesListItemText>
           </FeaturesListItem>
         </FeaturesList>
       </Container>

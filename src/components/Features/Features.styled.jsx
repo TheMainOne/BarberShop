@@ -76,6 +76,7 @@ export const FeaturesListItem = styled.li`
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 95px) / 2);
+    padding-bottom: 10px;
   }
 `;
 
@@ -95,4 +96,8 @@ export const FeaturesListItemWrapper = styled.span`
     line-height: 22px;
     color: #ff6c00;
   }
+`;
+
+export const FeaturesListItemText = styled.p`
+  text-align: center;
 `;
