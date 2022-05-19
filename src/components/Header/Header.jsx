@@ -1,5 +1,7 @@
+import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
+import { ModalWindow } from "components/ModalWindow/ModalWindow";
 import { Container } from "components/GlobalStyles";
 import {
   Header,
@@ -18,6 +20,10 @@ import {
 } from "./Header.styled";
 
 export const SiteHeader = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <Header>
@@ -27,7 +33,7 @@ export const SiteHeader = () => {
               fontSize="large"
               sx={{ color: "transparent" }}
             />
-            <MenuIcon fontSize="large" />
+            <MenuIcon fontSize="large" onClick={handleOpen} />
           </Navigation>
           <NavigationWrapper>
             <nav>
@@ -67,6 +73,11 @@ export const SiteHeader = () => {
               осторожно и со вкусом.
             </HeaderText>
           </NavigationTitleInformation>
+          <ModalWindow
+            open={open}
+            handleOpen={handleOpen}
+            handleClose={handleClose}
+          />
         </Container>
       </Header>
     </>
