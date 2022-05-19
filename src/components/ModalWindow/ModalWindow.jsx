@@ -49,7 +49,7 @@ export const ModalWindow = ({ open, handleOpen, handleClose }) => {
           <ModalListItem>
             <ModalButton>Товары</ModalButton>
           </ModalListItem>
-          <a>
+          <a href="g">
             <ModalButton>Контакты</ModalButton>
           </a>
         </ModalList>
