@@ -8,13 +8,14 @@ import {
   FeaturesListItem,
   FeaturesListItemWrapper,
   FeaturesListItemText,
+  FeaturesWrapper,
 } from "./Features.styled";
 
 export const Features = () => {
   return (
     <FeaturesSection>
       <Container>
-        <div>
+        <FeaturesWrapper>
           <div>
             <FeaturesText>старая традиционная школа</FeaturesText>
             <FeaturesTitle>Почему приходят именно к нам?</FeaturesTitle>
@@ -47,7 +48,7 @@ export const Features = () => {
               </FeaturesListItemText>
             </FeaturesListItem>
           </FeaturesList>
-        </div>
+        </FeaturesWrapper>
       </Container>
     </FeaturesSection>
   );

@@ -54,11 +54,22 @@ export const FeaturesSecondText = styled.p`
   color: #555555;
 `;
 
+export const FeaturesWrapper = styled.div`
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+`;
+
 export const FeaturesList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   color: #303030;
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 50px;
+  }
 `;
 
 export const FeaturesListItem = styled.li`

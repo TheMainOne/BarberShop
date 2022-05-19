@@ -14,6 +14,7 @@ import {
   GoodsItemSocialMediasList,
   GoodsItemSocialMediasListItem,
   GoodsItemSocialMediasListLink,
+  GoodsList,
 } from "./Goods.styled";
 import img1 from "../../images/masters/img1.jpg";
 import img2 from "../../images/masters/img2.jpg";
@@ -25,7 +26,7 @@ export const GoodsSection = () => {
       <Container>
         <GoodsText>для настоящих ценителей атмосферы</GoodsText>
         <GoodsTitle>Наши мастера</GoodsTitle>
-        <ul>
+        <GoodsList>
           <GoodsWrapper>
             <img src={img1} alt="Goods" />
             <GoodsThumb>
@@ -185,7 +186,7 @@ export const GoodsSection = () => {
               </GoodsItemSocialMediasList>
             </GoodsThumb>
           </GoodsWrapper>
-        </ul>
+        </GoodsList>
       </Container>
     </Goods>
   );

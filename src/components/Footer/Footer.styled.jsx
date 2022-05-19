@@ -20,13 +20,20 @@ export const FooterSection = styled.footer`
   }
 `;
 
+export const FooterWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+`;
+
 export const FooterTitle = styled.h3`
   margin-bottom: 40px;
   font-size: 42px;
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-align: center;
 `;
 
 export const FooterContactsList = styled.ul`

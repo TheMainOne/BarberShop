@@ -17,8 +17,46 @@ export const Goods = styled.section`
 `;
 
 export const GoodsWrapper = styled.li`
-  &:not(:last-of-type) {
-    margin-bottom: 64px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-of-type) {
+      margin-bottom: 64px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 450px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 64px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    width: 290px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0px;
+      margin-right: 22px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 320px;
+  }
+`;
+
+export const GoodsList = styled.ul`
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1440px) {
+    justify-content: space-between;
   }
 `;
 
@@ -41,6 +79,9 @@ export const GoodsText = styled.p`
     background-color: currentColor;
     margin-right: 20px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-left: 118px;
+  }
 `;
 
 export const GoodsTitle = styled.h3`
@@ -50,6 +91,10 @@ export const GoodsTitle = styled.h3`
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #303030;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-left: 118px;
+  }
 `;
 
 export const GoodsThumb = styled.div`

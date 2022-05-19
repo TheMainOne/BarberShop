@@ -4,12 +4,18 @@ import img from "../../images/hero/img1@2x.jpg";
 export const Header = styled.header`
   height: 580px;
   padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url(${img});
   background-size: cover;
   background-position: center;
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-position: unset;
   }
 `;
 
@@ -115,7 +121,7 @@ export const NavigationTitleInformation = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 350px;
+    width: 470px;
     margin-left: 100px;
   }
 `;
@@ -146,6 +152,11 @@ export const CompanyName = styled.p`
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.05em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 `;
 
 export const HeaderText = styled.p`
@@ -153,4 +164,9 @@ export const HeaderText = styled.p`
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 `;

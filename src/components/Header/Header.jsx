@@ -14,6 +14,7 @@ import {
   NavigationContactsButton,
   NavigationContactsLink,
   NavigationTitleInformation,
+  HeaderText,
 } from "./Header.styled";
 
 export const SiteHeader = () => {
@@ -60,11 +61,11 @@ export const SiteHeader = () => {
           <NavigationTitleInformation>
             <HeaderTitle>A HAIR SALON FOR MEN IN KYIV</HeaderTitle>
             <CompanyName>Lend-Lease</CompanyName>
-            <p>
+            <HeaderText>
               Мы эксперты в модных мужских <br /> стрижках. Работаем быстро,{" "}
               <br />
               осторожно и со вкусом.
-            </p>
+            </HeaderText>
           </NavigationTitleInformation>
         </Container>
       </Header>

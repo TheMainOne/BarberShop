@@ -48,6 +48,11 @@ export const AboutSectionText = styled.p`
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 42px;
+    line-height: 1.16;
+  }
 `;
 
 export const AboutSectionSecondText = styled.p`
@@ -56,6 +61,11 @@ export const AboutSectionSecondText = styled.p`
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: #555555;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 `;
 
 export const AboutSectionThirdText = styled.p`
