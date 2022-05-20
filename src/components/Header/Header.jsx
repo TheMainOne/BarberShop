@@ -3,6 +3,7 @@ import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
 import { useState } from "react";
 import { ModalWindow } from "components/ModalWindow/ModalWindow";
 import { Container } from "components/GlobalStyles";
+import { Link } from "react-scroll/modules";
 import {
   Header,
   Navigation,
@@ -17,9 +18,6 @@ import {
   NavigationTitleInformation,
   HeaderText,
 } from "./Header.styled";
-
-var Scroll = require("react-scroll");
-var Link = Scroll.Link;
 
 export const SiteHeader = () => {
   const [open, setOpen] = useState(false);
