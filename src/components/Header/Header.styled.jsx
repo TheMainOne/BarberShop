@@ -49,20 +49,19 @@ export const NavigationLargeList = styled.ul`
 `;
 
 export const NavigationLargeListItem = styled.li`
-  &:not(:last-of-type) {
-    margin-right: 24px;
-  }
-`;
-
-export const NavigationLargeListItemLink = styled.a`
   font-size: 12px;
   line-height: 1.33px;
   letter-spacing: 0.1em;
   color: #ffffff;
+  cursor: pointer;
 
   &:hover,
   focus {
     color: #ff6c00;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 24px;
   }
 `;
 

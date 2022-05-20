@@ -19,7 +19,7 @@ export const AboutSection = () => {
       <Container>
         <AboutSectionWrapper>
           <AboutSectionImageList>
-            <AboutSectionImageItem>
+            <AboutSectionImageItem name="aboutUs">
               <img src={img1} alt="Barber" />
             </AboutSectionImageItem>
             <AboutSectionImageItem>

@@ -25,7 +25,7 @@ export const GoodsSection = () => {
     <Goods>
       <Container>
         <GoodsText>для настоящих ценителей атмосферы</GoodsText>
-        <GoodsTitle>Наши мастера</GoodsTitle>
+        <GoodsTitle name="goods">Наши мастера</GoodsTitle>
         <GoodsList>
           <GoodsWrapper>
             <img src={img1} alt="Goods" />

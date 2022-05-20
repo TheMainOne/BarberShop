@@ -1,6 +1,7 @@
-import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
+import { useState } from "react";
+import { Link } from "react-scroll";
 import { ModalWindow } from "components/ModalWindow/ModalWindow";
 import { Container } from "components/GlobalStyles";
 import {
@@ -11,7 +12,6 @@ import {
   NavigationWrapper,
   NavigationLargeList,
   NavigationLargeListItem,
-  NavigationLargeListItemLink,
   NavigationContactsWrapper,
   NavigationContactsButton,
   NavigationContactsLink,
@@ -39,19 +39,40 @@ export const SiteHeader = () => {
             <nav>
               <NavigationLargeList>
                 <NavigationLargeListItem>
-                  <NavigationLargeListItemLink href="#">
+                  <Link
+                    activeClass="active"
+                    to="aboutUs"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
                     О нас
-                  </NavigationLargeListItemLink>
+                  </Link>
                 </NavigationLargeListItem>
                 <NavigationLargeListItem>
-                  <NavigationLargeListItemLink href="#">
-                    Товары
-                  </NavigationLargeListItemLink>
+                  <Link
+                    activeClass="active"
+                    to="goods"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Мастера
+                  </Link>
                 </NavigationLargeListItem>
                 <NavigationLargeListItem>
-                  <NavigationLargeListItemLink href="#">
+                  <Link
+                    activeClass="active"
+                    to="footer"
+                    spy={true}
+                    smooth={true}
+                    offset={-30}
+                    duration={500}
+                  >
                     Контакты
-                  </NavigationLargeListItemLink>
+                  </Link>
                 </NavigationLargeListItem>
               </NavigationLargeList>
             </nav>
@@ -73,11 +94,7 @@ export const SiteHeader = () => {
               осторожно и со вкусом.
             </HeaderText>
           </NavigationTitleInformation>
-          <ModalWindow
-            open={open}
-            handleOpen={handleOpen}
-            handleClose={handleClose}
-          />
+          <ModalWindow open={open} handleClose={handleClose} />
         </Container>
       </Header>
     </>

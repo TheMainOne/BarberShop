@@ -20,7 +20,7 @@ export const Footer = () => {
       <Container>
         <FooterWrapper>
           <div>
-            <FooterTitle>Контакты</FooterTitle>
+            <FooterTitle name="footer">Контакты</FooterTitle>
             <div>
               <FooterContactsList>
                 <FooterContactsListItem>

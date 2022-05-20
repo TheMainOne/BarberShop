@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { Link } from "react-scroll";
 import {
   ModalList,
   ModalListItem,
@@ -9,7 +10,7 @@ import {
   ModalLinkButton,
 } from "./ModalWindow.styled";
 
-export const ModalWindow = ({ open, handleOpen, handleClose }) => {
+export const ModalWindow = ({ open, handleClose }) => {
   return (
     <Modal
       open={open}
@@ -45,6 +46,7 @@ export const ModalWindow = ({ open, handleOpen, handleClose }) => {
         <ModalList>
           <ModalListItem>
             <Typography
+              variant="span"
               sx={{
                 fontFamily: "inherit",
                 fontSize: "18px",
@@ -54,7 +56,19 @@ export const ModalWindow = ({ open, handleOpen, handleClose }) => {
                 },
               }}
             >
-              О нас
+              <Link
+                activeClass="active"
+                to="aboutUs"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                delay={500}
+                ignoreCancelEvents={true}
+                onClick={() => console.log("click")}
+              >
+                О нас
+              </Link>
             </Typography>
           </ModalListItem>
           <ModalListItem>
