@@ -1,7 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
-import { useState } from "react";
 import { Link } from "react-scroll";
+import { useState } from "react";
 import { ModalWindow } from "components/ModalWindow/ModalWindow";
 import { Container } from "components/GlobalStyles";
 import {
