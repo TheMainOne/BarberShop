@@ -16,10 +16,10 @@ import img2 from "../../images/about_us/tablet/img2.jpg";
 export const AboutSection = () => {
   return (
     <AboutSectionStyled>
-      <Container>
+      <Container name="aboutUs">
         <AboutSectionWrapper>
           <AboutSectionImageList>
-            <AboutSectionImageItem name="aboutUs">
+            <AboutSectionImageItem>
               <img src={img1} alt="Barber" />
             </AboutSectionImageItem>
             <AboutSectionImageItem>

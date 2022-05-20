@@ -63,9 +63,7 @@ export const ModalWindow = ({ open, handleClose }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                delay={500}
-                ignoreCancelEvents={true}
-                onClick={() => console.log("click")}
+                onClick={handleClose}
               >
                 О нас
               </Link>
@@ -73,6 +71,7 @@ export const ModalWindow = ({ open, handleClose }) => {
           </ModalListItem>
           <ModalListItem>
             <Typography
+              variant="span"
               sx={{
                 fontFamily: "inherit",
                 fontSize: "18px",
@@ -82,11 +81,22 @@ export const ModalWindow = ({ open, handleClose }) => {
                 },
               }}
             >
-              Товары
+              <Link
+                activeClass="active"
+                to="goods"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                Мастера
+              </Link>
             </Typography>
           </ModalListItem>
           <ModalListItem>
             <Typography
+              variant="span"
               sx={{
                 fontFamily: "inherit",
                 fontSize: "18px",
@@ -96,7 +106,17 @@ export const ModalWindow = ({ open, handleClose }) => {
                 },
               }}
             >
-              Контакты
+              <Link
+                activeClass="active"
+                to="footer"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                Контакты
+              </Link>
             </Typography>
           </ModalListItem>
         </ModalList>
